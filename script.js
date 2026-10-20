@@ -210,7 +210,7 @@ if (númeroIntervalo >= 16 && 24) {
 
 let Compras = 300
 let Assinantes = true
-if (Compras >= 200 || Assinantes === "Assinantes") {
+if (Compras >= 200 || Assinantes === true) {
     console.log("Tem direito a frete grátis")
 } else {
     console.log("Não tem direito a frete grátis")
@@ -229,11 +229,14 @@ if (diaDasemana === "Sabado" || diaDasemana === "Domingo") {
 
 let Compra = 150
 let Assinante = true
-if(Compra >= 200 || Assinante === true) {
+let porcentagemDesconto = 0.15
+if (Compra >= 200 || Assinante === true) {
+    let valorDesconto = Compra * porcentagemDesconto
 console.log ("Pode receber o desconto")
 } else {
     console.log("Não pode receber o desconto")
 }
+
 
 
 
